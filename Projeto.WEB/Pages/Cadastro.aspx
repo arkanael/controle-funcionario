@@ -21,6 +21,15 @@
                 Display="Dynamic"
                 ValidationGroup="formularioCadastro"
             />
+            <asp:RegularExpressionValidator
+                ID="regexNome"
+                runat="server"
+                ControlToValidate="txtNome"
+                ErrorMessage="Nome de usuário inválido, informe apenas caracteres alfabéticos."
+                ForeColor="Red"
+                Display="Dynamic"
+                ValidationExpression="^[A-Za-zÀ-Üà-ü\s.']{6,50}$"
+                ValidationGroup="formularioCadastro" />
             <br />
 
             <label>Login de acesso:</label>
@@ -35,6 +44,15 @@
                 Display="Dynamic"
                 ValidationGroup="formularioCadastro"
             />
+            <asp:RegularExpressionValidator
+                ID="regexLogin"
+                runat="server"
+                ControlToValidate="txtLogin"
+                ErrorMessage="Login de usuário inválido, informe apenas letras minusculas sem espaço."
+                ForeColor="Red"
+                Display="Dynamic"
+                ValidationExpression="^[a-z.]{5,25}$"
+                ValidationGroup="formularioCadastro" />
             <br />
 
             <label>Senha de acesso:</label>
@@ -49,6 +67,17 @@
                 Display="Dynamic"
                 ValidationGroup="formularioCadastro"
             />
+
+            <asp:RegularExpressionValidator
+                ID="regexSenha"
+                runat="server"
+                ControlToValidate="txtSenha"
+                ErrorMessage="Senha de usuário inválida, informe apenas caracteres ou números."
+                ForeColor="Red"
+                Display="Dynamic"
+                ValidationExpression="^[A-Za-z0-9]{6,20}$"
+                ValidationGroup="formularioCadastro" />
+
             <br />
 
             <label>Confirme a senha:</label>

@@ -31,6 +31,15 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredNome;
         
         /// <summary>
+        /// regexNome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexNome;
+        
+        /// <summary>
         /// txtLogin control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLogin;
         
         /// <summary>
+        /// regexLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexLogin;
+        
+        /// <summary>
         /// txtSenha control.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace Projeto.WEB.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenha;
+        
+        /// <summary>
+        /// regexSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexSenha;
         
         /// <summary>
         /// txtSenhaConfirm control.

@@ -139,7 +139,9 @@
       <DependentUpon>Layout.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="imagens\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Projeto.BLL\Projeto.BLL.csproj">
       <Project>{45d9deec-4c9c-402f-b6b8-0fdd88721976}</Project>

@@ -13,5 +13,10 @@ namespace Projeto.WEB.Pages
         {
 
         }
+
+        protected void btnAcesso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

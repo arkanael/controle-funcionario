@@ -22,6 +22,15 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtLogin;
         
         /// <summary>
+        /// requiredLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLogin;
+        
+        /// <summary>
         /// txtSenha control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
         
         /// <summary>
+        /// requiredSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredSenha;
+        
+        /// <summary>
         /// btnAcesso control.
         /// </summary>
         /// <remarks>
@@ -38,5 +56,14 @@ namespace Projeto.WEB.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAcesso;
+        
+        /// <summary>
+        /// lblMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
     }
 }
