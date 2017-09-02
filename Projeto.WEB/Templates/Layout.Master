@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Projeto.WEB.Templates.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <!-- folhas de estilo CSS -->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+</head>
+<body class="container">
+
+    <div class="well well-sm">
+        <h2>Sistema de Acesso de Usuários</h2>
+        Turma de C# WebDeveloper - Sábado/Tarde 2017
+    </div>
+
+    <form id="form1" runat="server">
+    <div>
+        
+        <!-- Local para entrada de conteúdo das demais páginas -->
+        <asp:ContentPlaceHolder ID="conteudoPrincipal" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+
+</body>
+</html>
