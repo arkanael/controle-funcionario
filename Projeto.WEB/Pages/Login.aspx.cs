@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Projeto.Entidades;
+using Projeto.BLL;
 
 namespace Projeto.WEB.Pages
 {
@@ -16,7 +18,23 @@ namespace Projeto.WEB.Pages
 
         protected void btnAcesso_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //instanciar a camada de negócio
+                UsuarioBusiness business = new UsuarioBusiness();
+                Usuario u = business.Autenticar(txtLogin.Text, txtSenha.Text);
 
+                //armazenar os dados do usuário em sessão
+                Session["usuario"] = u;
+                
+                //redirecionar para a paágina de acesso restrito
+                Response.Redirect("/AreaRegistrita/Default.aspx");
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = ex.Message;
+                lblMensagem.ForeColor = System.Drawing.Color.Red;
+            }
         }
     }
 }
