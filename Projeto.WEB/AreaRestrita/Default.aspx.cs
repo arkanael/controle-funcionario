@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Projeto.Entidades;
+using System.Web.Security;
 
 namespace Projeto.WEB.AreaRestrita
 {
@@ -35,6 +36,9 @@ namespace Projeto.WEB.AreaRestrita
             //remover a sessão
             Session.Remove("usuario");
             Session.Abandon();
+
+            //destuir o ticket
+            FormsAuthentication.SignOut();
 
             //redirecionar de volta para a página de login
             Response.Redirect("/Pages/Login.aspx");
