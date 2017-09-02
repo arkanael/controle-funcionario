@@ -22,12 +22,11 @@ namespace Projeto.WEB.AreaRestrita
                     Usuario u = Session["usuario"] as Usuario;
 
                     //exibir os dados do usuario
-                    imgUsuario.ImageUrl = "/imagens" + u.Foto;
+                    imgUsuario.ImageUrl = "/imagens/" + u.Foto;
                     lblNome.Text = u.Nome;
                     lblLogin.Text = u.Login;
 
                 }
-                
             }
         }
 

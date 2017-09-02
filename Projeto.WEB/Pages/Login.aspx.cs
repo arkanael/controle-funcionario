@@ -28,7 +28,7 @@ namespace Projeto.WEB.Pages
                 Session["usuario"] = u;
                 
                 //redirecionar para a paágina de acesso restrito
-                Response.Redirect("/AreaRegistrita/Default.aspx");
+                Response.Redirect("/AreaRestrita/Default.aspx");
             }
             catch (Exception ex)
             {
