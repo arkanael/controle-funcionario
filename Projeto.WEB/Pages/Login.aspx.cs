@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Projeto.Entidades;
 using Projeto.BLL;
+using System.Web.Security;
 
 namespace Projeto.WEB.Pages
 {
@@ -26,7 +27,17 @@ namespace Projeto.WEB.Pages
 
                 //armazenar os dados do usuário em sessão
                 Session["usuario"] = u;
-                
+
+                //criando o ticket de acesso
+                FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(u.Login, false, 5);
+
+                //gravando o ticket no navegador 
+                HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, FormsAuthentication.Encrypt(ticket));
+
+                //redirecionar para página de acesso restrito
+                Response.Redirect("/AreaRestrita/Default.aspx");
+
+
                 //redirecionar para a paágina de acesso restrito
                 Response.Redirect("/AreaRestrita/Default.aspx");
             }
